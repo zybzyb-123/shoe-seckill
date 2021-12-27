@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: shoe-seckill-cache
+#  redis:
+#    host: 121.40.220.104
+#    port: 6379
+#    timeout: 1000
+#    poolMaxId
+server:
+  port: 8085
+
+#dubbo配置
+embedded:
+  zookeeper:
+    port: 2181
+dubbo:
+  scan:
+    base-packages: com.zhao.shoeSeckill.service
+  application:
+    name: ${spring.application.name}
+  protocol:
+    name: dubbo
+    port: 12348
+    threads: 800
+    threadpool: cached
+    dispatcher: message
+  registry:
+    check: true
+    address: zookeeper://127.0.0.1:${embedded.zookeeper.port}
+
+redis:
+  host: 121.40.220.104
+  port: 6379
+  timeout: 1000
+  poolMaxTotal: 1000
+  poolMaxIdle: 500
+  poolMaxWait: 500
+
+logging:
+  level:
+    root: info
+    com.zhao.shoeSeckill: debug
+  path: logs/
+  file:
+    max-history: 3
