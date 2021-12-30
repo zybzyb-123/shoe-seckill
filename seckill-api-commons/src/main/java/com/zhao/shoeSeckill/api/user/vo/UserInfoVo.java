@@ -1,4 +1,4 @@
-package com.zhao.shoeSeckill.api.user;
+package com.zhao.shoeSeckill.api.user.vo;
 
 import lombok.Getter;
 import lombok.Setter;

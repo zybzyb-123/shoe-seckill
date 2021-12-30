@@ -1,10 +1,10 @@
-package com.zhao.shoeSeckill.service;
+package com.zhao.shoeSeckill.api.user;
 
-import com.zhao.shoeSeckill.api.user.LoginVo;
-import com.zhao.shoeSeckill.api.user.RegisterVo;
-import com.zhao.shoeSeckill.api.user.UserInfoVo;
-import com.zhao.shoeSeckill.api.user.UserVo;
-import com.zhao.shoeSeckill.result.ResponseCode;
+import com.zhao.shoeSeckill.api.user.vo.LoginVo;
+import com.zhao.shoeSeckill.api.user.vo.RegisterVo;
+import com.zhao.shoeSeckill.api.user.vo.UserInfoVo;
+import com.zhao.shoeSeckill.api.user.vo.UserVo;
+import com.zhao.shoeSeckill.enums.ResponseCode;
 
 import javax.validation.Valid;
 

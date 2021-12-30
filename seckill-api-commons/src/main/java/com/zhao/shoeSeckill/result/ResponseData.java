@@ -1,5 +1,7 @@
 package com.zhao.shoeSeckill.result;
 
+import com.zhao.shoeSeckill.enums.ResponseCode;
+
 import java.io.Serializable;
 
 /**

@@ -1,12 +1,7 @@
-package com.zhao.shoeSeckill.result;
+package com.zhao.shoeSeckill.enums;
 
 import java.io.Serializable;
 
-/**
- * 响应结果状态码
- *
- * @author noodle
- */
 public class ResponseCode implements Serializable {
 
     private int code;
@@ -85,5 +80,5 @@ public class ResponseCode implements Serializable {
     public String getMsg() {
         return msg;
     }
-}
 
+}
